@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>豆瓣音乐</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./slider/banner/demo.css">
+    <link rel="stylesheet" href="./slider/tab/tabs/demo.css">
+    <link rel="stylesheet" href="./slider/switchover/demo.css">
+    <link rel="stylesheet" href="./slider/tab/newPlate/demo.css">
+    <link rel="stylesheet" href="./slider/tab/hotMusic/demo.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <div class="head-top-nav">
+                <ul class="head-top-left-nav">
+                    <li><a href="#">豆瓣</a></li>
+                    <li><a href="#">读书</a></li>
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">音乐</a></li>
+                    <li><a href="#">同城</a></li>
+                    <li><a href="#">小组</a></li>
+                    <li><a href="#">阅读</a></li>
+                    <li><a href="#">FM</a></li>
+                    <li><a href="#">时间</a></li>
+                    <li><a href="#">豆品</a></li>
+                    <li><a href="#">更多</a></li>
+                </ul>
+                <ul class="head-top-right-nav">
+                    <li><a href="#">下载豆瓣客户端</a></li>
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div>
+            <div class="head-main-nav">
+                <div class="head-main-nav-top">
+                    <div class="head-main-nav-top-search">
+                        <div class="head-logo"></div>
+                        <div class="head-inp">
+                            <from>
+                                <input type="text" name="inp" id="head-inp" placeholder="唱片名、表演者、条码、ISRC">
+                                <button id="head-inp-btn"></button>
+                            </from>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-main-nav-bottom">
+                    <ul class="head-mian-bot-nav">
+                            <li><a href="#">音乐人</a></li>
+                            <li><a href="#">潮潮豆瓣音乐周</a></li>
+                            <li><a href="#">金羊毛计划</a></li>
+                            <li><a href="#">专题</a></li>
+                            <li><a href="#">排行榜</a></li>
+                            <li><a href="#">分类浏览</a></li>
+                            <li><a href="#">乐评</a></li>
+                            <li><a href="#">豆瓣FM</a></li>
+                            <li><a href="#">歌单</a></li>
+                            <li><a href="#">阿比鹿音乐节</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content-w">
+            <div class="content">
+                <div class="content-left">
+                    <div class="banner" id="swiper"></div>
+                    <div class="artist" id="artist"></div>
+                    <div class="recommend" id="moreTab"></div>
+                    <div class="new-plate" id="new-plate"></div>
+                    <div class="hotList" id="hotMusic"></div>
+                </div>
+                <div class="content-right">
+                    <div class="music-resourse">
+                        <ul class="music-resourse-menu">
+                            <li>
+                                <h2><a href="#">44945</a></h2>
+                                <p>音乐人</p>
+                            </li>
+                            <li>
+                                <h2><a href="#">2666</a></h2>
+                                <p>博客</p>
+                            </li>
+                            <li>
+                                <h2><a href="#">1133</a></h2>
+                                <p>厂牌</p>
+                            </li>
+                        </ul>
+                        <div class="btn">加入我们</div>
+                    </div>
+                    <div class="musician-classify">
+                        <div class="musician">
+                            <span class="tilte">热门音乐人分类</span>
+                            <span class="more">更多</span>
+                        </div>
+                        <table>
+                            <tr>
+                                <td><a href="#">流行</a></td>
+                                <td><a href="#">轻音乐</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">摇滚</a></td>
+                                <td><a href="#">古典</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">电子</a></td>
+                                <td><a href="#">世界音乐</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">民谣</a></td>
+                                <td><a href="#">说唱</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">爵士</a></td>
+                                <td><a href="#">原声</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="week-list" id="week-list">
+                        <div class="weekListHeader">
+                            <h1>本周单曲榜</h1>
+                            <button>全部播放</button>
+                        </div>
+                        <!-- <div class="weekListTab">
+                            <ul>
+                                <li class="listActive"><a href="#">最热</a></li>
+                                <li><a href="#">摇滚</a></li>
+                                <li><a href="#">民谣</a></li>
+                                <li><a href="#">流行</a></li>
+                                <li><a href="#">电子</a></li>
+                                <li><a href="#">说唱</a></li>
+                            </ul>
+                        </div>
+                        <div class="weekListContent">
+                            <ul>
+                                <li>
+                                    <div class="contentPic">
+                                        <img src="./img/only1-1.jpg" alt="">
+                                    </div>
+                                    <div class="musicDes">
+                                        <h5>城市by Sijia</h5>
+                                        <div class="author">
+                                            <p>不休</p>
+                                            <p>/</p>
+                                            <p>1528次播放</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contentPic">
+                                        <img src="./img/only1-1.jpg" alt="">
+                                    </div>
+                                    <div class="musicDes">
+                                        <h5>城市by Sijia</h5>
+                                        <div class="author">
+                                            <p>不休</p>
+                                            <p>/</p>
+                                            <p>1528次播放</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contentPic">
+                                        <img src="./img/only1-1.jpg" alt="">
+                                    </div>
+                                    <div class="musicDes">
+                                        <h5>城市by Sijia</h5>
+                                        <div class="author">
+                                            <p>不休</p>
+                                            <p>/</p>
+                                            <p>1528次播放</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contentPic">
+                                        <img src="./img/only1-1.jpg" alt="">
+                                    </div>
+                                    <div class="musicDes">
+                                        <h5>城市by Sijia</h5>
+                                        <div class="author">
+                                            <p>不休</p>
+                                            <p>/</p>
+                                            <p>1528次播放</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contentPic">
+                                        <img src="./img/only1-1.jpg" alt="">
+                                    </div>
+                                    <div class="musicDes">
+                                        <h5>城市by Sijia</h5>
+                                        <div class="author">
+                                            <p>不休</p>
+                                            <p>/</p>
+                                            <p>1528次播放</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contentPic">
+                                        <img src="./img/only1-1.jpg" alt="">
+                                    </div>
+                                    <div class="musicDes">
+                                        <h5>城市by Sijia</h5>
+                                        <div class="author">
+                                            <p>不休</p>
+                                            <p>/</p>
+                                            <p>1528次播放</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contentPic">
+                                        <img src="./img/only1-1.jpg" alt="">
+                                    </div>
+                                    <div class="musicDes">
+                                        <h5>城市by Sijia</h5>
+                                        <div class="author">
+                                            <p>不休</p>
+                                            <p>/</p>
+                                            <p>1528次播放</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contentPic">
+                                        <img src="./img/only1-1.jpg" alt="">
+                                    </div>
+                                    <div class="musicDes">
+                                        <h5>城市by Sijia</h5>
+                                        <div class="author">
+                                            <p>不休</p>
+                                            <p>/</p>
+                                            <p>1528次播放</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contentPic">
+                                        <img src="./img/only1-1.jpg" alt="">
+                                    </div>
+                                    <div class="musicDes">
+                                        <h5>城市by Sijia</h5>
+                                        <div class="author">
+                                            <p>不休</p>
+                                            <p>/</p>
+                                            <p>1528次播放</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contentPic">
+                                        <img src="./img/only1-1.jpg" alt="">
+                                    </div>
+                                    <div class="musicDes">
+                                        <h5>城市by Sijia</h5>
+                                        <div class="author">
+                                            <p>不休</p>
+                                            <p>/</p>
+                                            <p>1528次播放</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="music-250">
+                        <div class="music-250-tabBox">
+                            <h1>豆瓣音乐250</h1>
+                            <h4><a href="#">更多</a></h4>
+                        </div>
+                        <div class="music-250-imgBox">
+                            <ul>
+                                <li>
+                                    <img src="./img/music250-1.jpg">
+                                    <a href="#">完美的一天</a>
+                                </li>
+                                <li>
+                                    <img src="./img/music250-2.jpg">
+                                    <a href="#">介乎法國與旺角的詩意</a>
+                                </li>
+                                <li>
+                                    <img src="./img/music250-3.jpg">
+                                    <a href="#">阿菲正传</a>
+                                </li>
+                                <li>
+                                    <img src="./img/music250-4.jpg">
+                                    <a href="#">Alright,Still</a>
+                                </li>
+                                <li>
+                                    <img src="./img/music250-5.jpg">
+                                    <a href="#">100种生活</a>
+                                </li>
+                                <li>
+                                    <img src="./img/music250-6.jpg">
+                                    <a href="#">呼吸</a>
+                                </li>
+                                <li>
+                                    <img src="./img/music250-7.jpg">
+                                    <a href="#">在一起</a>
+                                </li>
+                                <li>
+                                    <img src="./img/music250-8.jpg">
+                                    <a href="#">万能青年旅店</a>
+                                </li>
+                                <li>
+                                    <img src="./img/music250-9.jpg">
+                                    <a href="#">回蔚</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <a href="#" class="client-w">
+                            <div class="clientPic"></div>
+                            <h1>豆瓣FM客户端</h1>
+                            <p>让好音乐继续</p>
+                        </a>
+                    </div>
+                    <div class="mini-program">
+                        <div class="mini-program-img"></div>
+                        <h1>豆瓣音乐人小程序</h1>
+                        <p>发现当下最酷的独立音乐</p>
+                    </div>
+                    <div class="contactUs">
+                        <div class="contact-title">
+                            <h1>联系我们</h1>
+                            <a href="https://music.douban.com/mailto:artists@douban.com">artsts@douban.com</a>
+                        </div>
+                        <div class="contact-list">
+                            <ul>
+                                <li>
+                                    <div class="contact-list-pic">
+                                        <img src="./img/home_artist.png">
+                                    </div>
+                                    <a href="#">音乐人小站</a>
+                                </li>
+                                <li>
+                                    <div class="contact-list-pic">
+                                        <img src="./img/home_weibo.png">
+                                    </div>
+                                    <a href="#">音乐人微博</a>
+                                </li>
+                                <li>
+                                    <div class="contact-list-pic">
+                                        <img src="./img/home_weixin.png">
+                                    </div>
+                                    <a href="#">音乐人微信</a>
+                                </li>
+                                <li>
+                                    <div class="contact-list-pic">
+                                        <img src="./img/home_fm.jpg">
+                                    </div>
+                                    <a href="#">FM小站</a>
+                                </li>
+                                <li>
+                                    <div class="contact-list-pic">
+                                        <img src="./img/home_weibo.png">
+                                    </div>
+                                    <a href="#">FM微博</a>
+                                </li>
+                                <li>
+                                    <div class="contact-list-pic">
+                                        <img src="./img/home_weixin.png">
+                                    </div>
+                                    <a href="#">FM微信</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+    <script src="./jquery/jquery-3.3.1.js"></script>
+    <script src="./slider/banner/demo.js"></script>
+    <script src="./slider/tab/demo.js"></script>
+    <script src="./slider/switchover/demo.js"></script>
+    <script src="demo.js"></script>
+</body>
+</html>

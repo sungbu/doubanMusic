@@ -1,0 +1,64 @@
+#swiper ul{
+    margin:0;
+    padding:0;
+}
+#swiper li{
+    list-style:none;
+}
+#swiper img{
+    font-size:0;
+}
+#swiper .img-box{
+    position:absolute;
+    top:0;
+    left:0;
+}
+#swiper .img-box li{
+    display:inline-block;
+}
+#swiper .img-box li a img{
+    width:100%;
+    height:100%;
+}
+#swiper .btn{
+    position: absolute;
+    top:50%;
+    width:100%;
+    height:51px;
+}
+#swiper .btn a{
+    position: absolute;
+    display:inline-block;
+    width:36px;
+    height:51px;
+    cursor: pointer;
+}
+#swiper .btn a.prevBtn{
+    left:0;
+    background-image:url(./img/banner_arrow.png);
+    background-position:0 51px;
+}
+#swiper .btn a.nextBtn{
+    right:0;
+    background-image:url(./img/banner_arrow.png);
+    background-position:36px 51px;
+}
+#swiper .order{
+    position: absolute;
+    bottom:15px;
+    left:50%;
+    height:5px;
+    margin-left:-25px;
+}
+#swiper .order ul li{
+    display:inline-block;
+    width:5px;
+    height:5px;
+    background-color:#F8F9F9;
+    margin-right:5px;
+    border-radius:50%;
+    cursor: pointer;
+}
+#swiper .order ul li.activeList{
+    background-color:#139d72;
+}

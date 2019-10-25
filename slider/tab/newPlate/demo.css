@@ -1,0 +1,121 @@
+#new-plate ul{
+    margin:0;
+    padding:0;
+}
+#new-plate li{
+    list-style:none;
+}
+#new-plate a{
+    text-decoration:none;
+}
+#new-plate .tabWrap .header{
+    font-size:17px;
+    color:#222;
+    margin:0 10px;
+}
+#new-plate .tabWrap .tabs{
+    display:inline-block;
+}
+#new-plate .tabWrap .tabs li{
+    display:inline-block;
+    font-size:14px;
+    margin-bottom:5px;
+}
+#new-plate .tabWrap .tabs li a{
+    margin-right:5px;
+    margin-left:2px;
+    color:#999;
+    font-size:13px;
+}
+#new-plate .tabWrap .tabs li a:after{
+    content:" |";
+    padding:3px 0;
+}
+#new-plate .tabWrap .tabs li a:hover{
+    color:#138A64;
+    text-decoration:underline;
+}
+#new-plate .tabWrap .tabs li a.activeTab{
+    color:#222;
+    font-size:16px;
+    color:#138A64;
+    font-weight:bolder;
+    font-size:13px;
+}
+#new-plate .content{
+    width:calc(100% - 35px);
+    height:100%;
+    border-top:2px solid #02A682;
+    background-color:#F5F7F8;
+    font-size:0;
+    padding:15px 0px 15px 30px;
+    border:none;
+}
+ #new-plate .content div.conBox{
+    display:none;
+}
+#new-plate div.content div.currentBox{
+    display:block;
+}
+#new-plate .content .box{
+    display:inline-block;
+    vertical-align:top;
+    margin-right:25px;
+    margin-bottom:10px;
+}
+#new-plate .content .box .imgBox{
+    width:125px;
+    height:125px;  
+    padding:3px;
+    text-align: center;
+}
+#new-plate .content .box .imgBox .pic{
+    width:125px;
+    height:125px;    
+    background-size: cover;
+    background-position: center top;
+    margin:0 auto;
+}
+#new-plate .content .box .str{
+    display:inline-block;
+    width: 135px;
+    font-size:16px;
+    margin:0 auto;
+}
+#new-plate .content .box .str a{
+    display:inline-block;
+    margin:5px 0;
+    font-size:15px;
+    color:#138A64;
+    text-align:left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+}
+#new-plate .content .box .str a:hover{
+    background-color:#138A64;
+    color:#fff;
+}
+#new-plate .content .box .str span{
+    display:inline-block;
+    width:125px;
+    height:18px;
+    color:#999;
+    font-size:13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+}
+#new-plate .content .box .str div{
+    display:block;
+    text-align:right;
+    margin-right:45px;
+    height:10px;
+    color:#e09015;
+    font-size: 13px;
+    line-height:1;
+    margin-top:5px;background-image:url(./img/star.png);
+    background-repeat:no-repeat;
+}

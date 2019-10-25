@@ -1,0 +1,130 @@
+#hotMusic ul{
+    margin:0;
+    padding:0;
+}
+#hotMusic li{
+    list-style:none;
+}
+#hotMusic a{
+    text-decoration:none;
+}
+#hotMusic .tabWrap .header{
+    font-size:17px;
+    color:#222;
+    margin:0 10px;
+}
+#hotMusic .tabWrap .tabs{
+    display:inline-block;
+}
+#hotMusic .tabWrap .tabs li{
+    display:inline-block;
+    font-size:14px;
+    margin-bottom:5px;
+}
+#hotMusic .tabWrap .tabs li a{
+    margin-right:5px;
+    margin-left:2px;
+    color:#999;
+    font-size:13px;
+}
+#hotMusic .tabWrap .tabs li a:after{
+    content:" |";
+    padding:3px 0;
+}
+#hotMusic .tabWrap .tabs li a.activeTab{
+    color:#222;
+    font-size:16px;
+    color:#138A64;
+    font-weight:bolder;
+    font-size:13px;
+}
+#hotMusic .tabWrap .tabs li a:hover{
+    color:#138A64;
+    text-decoration:underline;
+}
+#hotMusic .conBox{
+    display:none;
+    width:675px;
+    padding:23px 0 10px 7px;
+    background-color:#F5F7F8;
+    overflow: hidden;
+    border-top: 2px solid #02A682
+}
+#hotMusic div.currentBox{
+    display:block;
+}
+#hotMusic .conBox .tabs{
+    display:inline-block;
+    width:295px;
+    height:151px;
+    background-color:#fff;
+    margin:0 10px 10px 0;
+    padding:15px 15px 0 15px;
+}
+#hotMusic .conBox .tabs .img-Box{
+    display: inline-block;
+    width:41px;
+    height:100%;
+    vertical-align:top;
+    margin-right:15px;
+}
+#hotMusic .conBox .tabs .img-Box a{
+    display:block;
+    width:41px;
+    height:41px;
+    background-size:41px 41px;
+    margin-top:5px;
+}
+#hotMusic .conBox .tabs .textBox{
+    display: inline-block;
+    width:234px;
+    vertical-align:top;
+}
+#hotMusic .conBox .tabs .textBox p:nth-child(1) span:nth-child(1) a{
+    display:inline-block;
+    color:#138A64;
+    max-width:184px;
+    font-size:15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align:middle;
+}
+#hotMusic .conBox .tabs .textBox p:nth-child(1){
+    margin-bottom:2px;
+}
+#hotMusic .conBox .tabs .textBox p:nth-child(1) span:nth-child(1) a:hover{
+    background-color: #138A64;
+    color:#fff;
+}
+#hotMusic .conBox .tabs .textBox p:nth-child(1) span:nth-child(2){
+    font-size:13px;
+    color:#999;
+    vertical-align:middle;
+}
+#hotMusic .conBox .tabs .textBox p:nth-child(2){
+    margin-bottom:3px;
+}
+#hotMusic .conBox .tabs .textBox p:nth-child(2) span:nth-child(1) a{
+    color:#666;
+    font-size:13px;
+}
+#hotMusic .conBox .tabs .textBox p:nth-child(2) span:nth-child(1) a:hover{
+    background-color:#666;
+    color:#fff;
+}
+#hotMusic .conBox .tabs .textBox p:nth-child(2) span:nth-child(2){
+    font-size:13px;
+    color:#999;
+}
+#hotMusic .conBox .tabs .textBox ul{
+    max-width:200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align:middle;
+}
+#hotMusic .conBox .tabs .textBox ul li{
+    color:#666;
+    font-size:14px;
+}

@@ -1,0 +1,95 @@
+#artist ul{
+    margin:0;
+    padding:0;
+}
+#artist li{
+    list-style:none;
+}
+#artist a{
+    text-decoration:none;
+}
+#artist .tabWrap .header{
+    font-size:17px;
+    color:#222;
+    margin:0 10px;
+}
+#artist .tabWrap .tabs{
+    display:inline-block;
+}
+#artist .tabWrap .tabs li{
+    display:inline-block;
+    font-size:14px;
+    margin-bottom:5px;
+}
+#artist .tabWrap .tabs li a{
+    color:#999;
+    margin-right:5px;
+    margin-left:2px;
+}
+#artist .tabWrap .tabs li a:after{
+    content:" |";
+    color:#999;
+    padding:3px 0;
+}
+#artist .tabWrap .tabs li a.activeTab{
+    color:#222;
+    font-size:16px;
+}
+#artist .content{
+    width:calc(100% - 35px);
+    height:100%;
+    border-top:2px solid #02A682;
+    background-color:#F5F7F8;
+    font-size:0;
+    padding:15px 0 0 35px;
+    border:none;
+}
+ #artist .content div.conBox{
+    display:none;
+}
+#artist div.content div.currentBox{
+    display:block;
+}
+#artist .content .box{
+    display:inline-block;
+    vertical-align:top;
+    margin-right:30px;
+    margin-bottom:10px;
+}
+#artist .content .box .imgBox{
+    width:125px;
+    height:125px;  
+    padding:3px;
+    border: 5px solid #FFFFFF;
+    box-shadow: 0 0 0 1px #DFDCDC;
+    text-align: center;
+}
+#artist .content .box .imgBox .pic{
+    width:125px;
+    height:125px;    
+    background-size: cover;
+    background-position: center top;
+    margin:0 auto;
+}
+#artist .content .box .str{
+    display:inline-block;
+    text-align: center;
+    font-size:16px;
+    margin:0 auto;
+}
+#artist .content .box .str a{
+    display:inline-block;
+    margin:5px 0;
+    font-size:15px;
+    color:#138A64;
+}
+#artist .content .box .str a:hover{
+    background-color:#138A64;
+    color:#fff;
+}
+#artist .content .box .str span{
+    display:inline-block;
+    width:125px;
+    color:#999;
+    font-size:13px;
+}
